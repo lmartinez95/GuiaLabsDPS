@@ -135,7 +135,7 @@ const Formulario = ({citas, setCitas, guardarMostrarForm, guardarCitasStorage}) 
                         {label: 'No fumadores', value: 0},
                     ]}
                 />
-                <Text>{seccion}</Text>
+                <Text>{seccion == 1 ? "Fumadores" : "No fumadores"}</Text>
             </View>
             <View>
                 <TouchableHighlight onPress={ () => crearNuevaCita() } style={styles.btnSubmit}>
